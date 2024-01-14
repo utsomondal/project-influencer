@@ -41,6 +41,7 @@ nav li a {
   margin-top: 50px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 130px;
 }
 .header-image {
@@ -70,12 +71,34 @@ nav li a {
   color: #fff;
   font-weight: 700;
 }
+.fa-solid {
+  margin-left: 10px;
+}
+/* section */
+section {
+  margin: 130px 0;
+  padding: 50px 130px;
+}
+/* section */
+/* sponsor section styles */
+.sponsor {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* collection section styles */
+.collection .collection-title {
+  text-align: center;
+  color: var(--font-color);
+  font-size: 1.75rem;
+  font-weight: 600;
+}
 /* responsive design for mobile */
 @media screen and (max-width: 576px) {
-  header{
+  header {
     padding: 20px 30px;
   }
-  .header-content{
+  .header-content {
     text-align: center;
   }
   nav,
@@ -86,13 +109,25 @@ nav li a {
   .header-content-container {
     flex-direction: column-reverse;
   }
-  .header-image{
+  .header-image {
     background-position: center;
   }
-  .header-image img{
+  .header-image img {
     width: 100%;
   }
   .header-content-container .header-content-title {
     font-size: 1.75rem;
+  }
+  .header-content-container .header-content-description {
+    font-size: 0.875rem;
+  }
+  section {
+    margin: 50px 0;
+    padding: 5px 10px;
+  }
+  .sponsor {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
