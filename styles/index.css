@@ -51,7 +51,7 @@ nav li a {
 }
 .header-content-container .header-content-title {
   color: var(--font-color);
-  font-size: 52px;
+  font-size: 3.25rem;
   font-weight: 700;
   margin-bottom: 0;
 }
@@ -67,7 +67,32 @@ nav li a {
   background-color: var(--background-color);
   border: none;
   padding: 10px 25px;
-  color: #FFF;
+  color: #fff;
   font-weight: 700;
 }
 /* responsive design for mobile */
+@media screen and (max-width: 576px) {
+  header{
+    padding: 20px 30px;
+  }
+  .header-content{
+    text-align: center;
+  }
+  nav,
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .header-content-container {
+    flex-direction: column-reverse;
+  }
+  .header-image{
+    background-position: center;
+  }
+  .header-image img{
+    width: 100%;
+  }
+  .header-content-container .header-content-title {
+    font-size: 1.75rem;
+  }
+}
