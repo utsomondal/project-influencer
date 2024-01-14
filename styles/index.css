@@ -159,6 +159,34 @@ section {
   padding: 10px 25px;
   font-weight: 700;
 }
+/* footer styles */
+footer {
+  text-align: center;
+  background-color: #0a0826;
+  color: #fff;
+  padding: 50px 0;
+}
+.footer-img {
+  margin-top: 17px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.fa-brands {
+  font-size: 1.5rem;
+  color: #fff;
+}
+footer .footer-content h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+footer .footer-content .copyright,
+footer .footer-content .reserved  {
+  color: #d9dbe1;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
 /* responsive design for mobile */
 @media screen and (max-width: 576px) {
   header {
@@ -179,7 +207,7 @@ section {
     flex-direction: column-reverse;
   }
 
-  .header-image{
+  .header-image {
     background-position: center;
   }
   .featured .featured-img img,
