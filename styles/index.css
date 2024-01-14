@@ -76,7 +76,7 @@ nav li a {
 }
 /* section */
 section {
-  margin: 130px 0;
+  margin: 70px 0;
   padding: 50px 130px;
 }
 /* section */
@@ -92,6 +92,43 @@ section {
   color: var(--font-color);
   font-size: 1.75rem;
   font-weight: 600;
+  margin-bottom: 30px;
+}
+.collection-container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.collection-container .card {
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+.collection-container .card img {
+  width: 100%;
+}
+.collection-container .card .title {
+  color: #18191f;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+.collection-container .card .price {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+.collection-container .card .info {
+  color: #787885;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.252px;
+}
+.collection .see-more h4 {
+  color: var(--background-color);
+  font-weight: 700;
+  text-align: right;
+  margin-top: 10px;
 }
 /* responsive design for mobile */
 @media screen and (max-width: 576px) {
@@ -129,5 +166,8 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
+  }
+  .collection-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
